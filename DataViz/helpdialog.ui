@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpDialog</class>
+ <widget class="QDialog" name="HelpDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>723</width>
+    <height>334</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>650</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Help</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/helpSymbol.svg</normaloff>:/icons/helpSymbol.svg</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="maximumSize">
+      <size>
+       <width>700</width>
+       <height>600</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="accessibleName">
+      <string notr="true"/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <widget class="QWidget" name="Dataset">
+      <property name="maximumSize">
+       <size>
+        <width>800</width>
+        <height>600</height>
+       </size>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <attribute name="title">
+       <string>Dataset</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QTreeWidget" name="treeWidget">
+         <property name="maximumSize">
+          <size>
+           <width>700</width>
+           <height>500</height>
+          </size>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+         <property name="textElideMode">
+          <enum>Qt::ElideRight</enum>
+         </property>
+         <property name="rootIsDecorated">
+          <bool>true</bool>
+         </property>
+         <property name="itemsExpandable">
+          <bool>true</bool>
+         </property>
+         <property name="allColumnsShowFocus">
+          <bool>false</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="headerHidden">
+          <bool>false</bool>
+         </property>
+         <property name="expandsOnDoubleClick">
+          <bool>false</bool>
+         </property>
+         <property name="columnCount">
+          <number>1</number>
+         </property>
+         <column>
+          <property name="text">
+           <string>In here, you will find answers to your questions about dataset. </string>
+          </property>
+         </column>
+         <item>
+          <property name="text">
+           <string>Loading a dataset</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Loading a file can be done by clicking on File menu -&gt; Load Dataset
+Alternatively, by clicking on the page symbol in the toolbar at the top of the app.</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>Drawing a dataset</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>It is also possible to draw a dataset by clicking on File manu -&gt; Draw dataset.
+Insert the x and y values in the table. 
+The dataset will be saved in a .txt file. </string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>The form of a dataset</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>The app currently is designed to work with datasets saved in .txt file, where the data is listed in two columns. 
+The first column is the x coordinate of the data point while the second is the y- coordinate of the datapoints. 
+</string>
+           </property>
+           <property name="flags">
+            <set>ItemIsEnabled|ItemIsAutoTristate</set>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>Mathematical function</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Menu -&gt; Analysis to perform mathematical functions between datasets</string>
+           </property>
+          </item>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="Graph">
+      <attribute name="title">
+       <string>Graph</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QTreeWidget" name="treeWidget_2">
+         <property name="maximumSize">
+          <size>
+           <width>700</width>
+           <height>600</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+         <property name="textElideMode">
+          <enum>Qt::ElideRight</enum>
+         </property>
+         <property name="horizontalScrollMode">
+          <enum>QAbstractItemView::ScrollPerItem</enum>
+         </property>
+         <property name="itemsExpandable">
+          <bool>true</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="headerHidden">
+          <bool>false</bool>
+         </property>
+         <column>
+          <property name="text">
+           <string>In here, you will find answers to your questions about plotting a dataset.</string>
+          </property>
+         </column>
+         <item>
+          <property name="text">
+           <string>How to plot a dataset ?</string>
+          </property>
+          <property name="flags">
+           <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsDropEnabled|ItemIsUserCheckable|ItemIsEnabled|ItemIsAutoTristate</set>
+          </property>
+          <item>
+           <property name="text">
+            <string>The app currently has only one way of plotting a XY plot of the dataset. 
+That is by right-clicking on the dataset window-&gt; plot-&gt; XY plot. 
+</string>
+           </property>
+           <property name="flags">
+            <set>ItemIsEnabled|ItemIsAutoTristate</set>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>Edit the graph</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Change colors</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>To change the color of the curve, right-click on the window, NOT THE PLOT. 
+Curve properties -&gt; Change color.
+Select the graph you want to change color of and pick a color. </string>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>Change width</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>To change the width of the curve, right-click on the window, NOT THE PLOT.
+Cirve properties -&gt; Change curve width.
+Depending on what you want, increase or decrease.
+Select the graph you want to change width of.</string>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>Change curve stye</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>If you change the curve style, it will affect all the graphs.</string>
+            </property>
+           </item>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>Plot multiple datasets</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>You can add a new graph on an already drawn dataset.
+Right-click and Curve properties -&gt; Plot multiple datasets.
+You can only pick from datasets that have been loaded in the app.</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>Plot an histogram</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Menu Polt -&gt; Plot histogram
+Can only plot open datasets.
+The histogram plotting is not accurate yet, it still in the process of being designed. 
+Can also be accesed by Right click on a dataset </string>
+           </property>
+          </item>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="Other">
+      <attribute name="title">
+       <string>Other</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QTreeWidget" name="treeWidget_3">
+         <property name="maximumSize">
+          <size>
+           <width>700</width>
+           <height>600</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustToContents</enum>
+         </property>
+         <property name="textElideMode">
+          <enum>Qt::ElideRight</enum>
+         </property>
+         <property name="horizontalScrollMode">
+          <enum>QAbstractItemView::ScrollPerItem</enum>
+         </property>
+         <property name="itemsExpandable">
+          <bool>true</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="headerHidden">
+          <bool>false</bool>
+         </property>
+         <column>
+          <property name="text">
+           <string>Can be used for future purposes.</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>dataset.svg</file>
+        <file>graph.svg</file>
+        <file>aboutSymbol.svg</file>
+        <file>helpSymbol.svg</file>
+        <file>errorSymbol.svg</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>SplashScreen.png</file>
+    </qresource>
+</RCC>
